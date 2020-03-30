@@ -1,0 +1,4 @@
+break main
+break splatter_calc::main
+break *_ZN13splatter_calc4main17h2ddd10eb16f3ebcdE + 69
+
