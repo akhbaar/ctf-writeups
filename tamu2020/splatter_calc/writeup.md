@@ -2,7 +2,7 @@ This challenge is pretty simple. We enter a number when prompted. And if the num
 This is determined by a check if rbx = 0x471de8678ae30ba1 and if rax = 0xacdee2ed87a5d886.
 
 I noticed that the computation was being done toward the end of main()
-Here's the start of them in IDA:
+Here's the start of it in IDA:
 
 ![IDA image failed to load](images/ida.png)
 
@@ -13,7 +13,7 @@ My thoughts when I saw this were to see if there was some way if I could replica
 
 As it turns out, a number that makes rbx = 0x471de8678ae30ba1 will also fit the requirements for rax. So, we don't really have to worry about the registers other than rbx, r13, and rbp.
 
-My script spit out a number, 982730589345. 
+My script spits out a number, 982730589345. 
 And when we plug it in, it passes the check.
 ![GDB Image failed to load](images/check.png)
 
